@@ -8,7 +8,6 @@ Useful quick links to login to the different services of Team Switch.
 Check the [releases](https://github.com/RLKevin/switch-login-tool/releases) for the latest version.
 
 ### Chrome
-
 W.I.P.
 
 ---
