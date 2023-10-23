@@ -2,9 +2,6 @@
 document.getElementById('login').addEventListener('click', login);
 document.getElementById('secureLogin').addEventListener('click', secureLogin);
 
-// DEV
-console.log('popup.js loaded');
-
 // Function to close the popup window
 function closePopup() {
 	window.close();

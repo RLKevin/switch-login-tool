@@ -56,6 +56,12 @@ h2 {
 	margin-top: 0;
 }
 
+.button-container {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+
 button {
 	cursor: pointer;
 	border: none;
@@ -64,6 +70,8 @@ button {
 	color: var(--cl-primary-text);
 	@include shape;
 	transition: all 150ms ease;
+	min-width: max-content;
+	margin: 0;
 
 	svg {
 		margin-right: 0.5rem;
