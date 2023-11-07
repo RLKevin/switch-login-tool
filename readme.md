@@ -8,7 +8,7 @@ Useful quick links to login to the different services of Team Switch.
 Check the [releases](https://github.com/RLKevin/switch-login-tool/releases) for the latest version.
 
 ### Chrome
-W.I.P.
+[Chrome Web Store](https://chromewebstore.google.com/detail/website-checker/dfjnbehgoeaajpahodjfebdoplbfjdlm?hl=en)
 
 ---
 &copy; 2023 Kevin van Nieukerke
