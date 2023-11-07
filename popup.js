@@ -8,7 +8,7 @@ function closePopup() {
 }
 
 async function login() {
-	const tab = await browser.tabs.query({ active: true, currentWindow: true });
+	const tab = await chrome.tabs.query({ active: true, currentWindow: true });
 	const currentURL = tab[0].url;
 
 	// remove path from URL
@@ -22,12 +22,16 @@ async function login() {
 	const wpLoginURL = domain + '/wp-login.php';
 
 	// open wp-login.php in current tab
-	browser.tabs.update({ url: wpLoginURL });
+	if (typeof browser !== 'undefined') {
+		browser.tabs.update({ url: wpLoginURL });
+	} else {
+		chrome.tabs.update({ url: wpLoginURL });
+	}
 	closePopup();
 }
 
 async function secureLogin() {
-	const tab = await browser.tabs.query({ active: true, currentWindow: true });
+	const tab = await chrome.tabs.query({ active: true, currentWindow: true });
 	const currentURL = tab[0].url;
 
 	// remove path from URL
@@ -41,6 +45,10 @@ async function secureLogin() {
 	const wpLoginURL = domain + '/switch';
 
 	// open wp-login.php in current tab
-	browser.tabs.update({ url: wpLoginURL });
+	if (typeof browser !== 'undefined') {
+		browser.tabs.update({ url: wpLoginURL });
+	} else {
+		chrome.tabs.update({ url: wpLoginURL });
+	}
 	closePopup();
 }
